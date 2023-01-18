@@ -115,7 +115,9 @@ body {
     margin: 20px 0;
 }
 
-.form_container .api .entry .entry-item input  {
+
+.api input[type=text], .api input[type=password], .api input[type="email"] {
+    display: block;
     width: 308px;
     background: #F3F2F6;
     border: none;
