@@ -6,10 +6,11 @@ html {
 }
 
 body {
-    background: #ff3344 url(https://thisisenzo.github.io/auth_page/auth_page/assets/images/bg.png) no-repeat;
+    background: #ff3344;
     min-width: 800px;
     height: 550px;
     font-size: 14px;
+    color: #4C4C66;
 }
 
 .left_side, .right_side {
@@ -70,22 +71,24 @@ body {
     font-size: 30px;
 }
 
-.right_side .section > h3 {
-    font-size: 32px;
+.right_side .section h1 {
+    font-size: 42px;
     color: #000000;
+    font-weight: 700;
+}
+
+.section > h3 span:last-child {
+    color: #e5a912;
+    font-weight: 300;
 }
 
 .right_side .section p.description {
     font-size: 18px;
 }
 
-.right_side .section > p {
-    font-size: 14px;
-}
-
-.section > h3 span:last-child {
-    color: #e5a912;
-    font-weight: 300;
+.right_side .section h2 {
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .form_container {
@@ -95,15 +98,24 @@ body {
     color: #4C4C66;
 }
 
-.form_container > .section > h3 {
+.section {
+    max-width: 340px;
+}
+
+.entry-item .password-label, .section .create p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_container > .section h1 {
     font-weight: 600;
 }
 
-.form_container .api .text_field {
+.entry > div {
     margin: 20px 0;
 }
 
-.form_container .api .text_field input  {
+.form_container .api .entry .entry-item input  {
     width: 308px;
     background: #F3F2F6;
     border: none;
@@ -118,7 +130,7 @@ body {
     margin: 10px 0;
 }
 
-.form_container .api .text_field input:focus {
+.form_container .api .entry input:focus {
     border-color: #7B61FF;
 }
 
@@ -141,12 +153,12 @@ body {
     color: #FF3344;
 }
 
-.form_container .api button.primary {
+.form_container .api .buttons button {
     border: none;
     background: #FFD96B;
 }
 
-.form_container .api button.secondary {
+.form_container .api .options button {
     border: 1px solid #FF3344;
     background: #fff;
 }
@@ -156,66 +168,11 @@ body {
     text-decoration: none;
 }
 
-
-/*checkbox*/
-.checkbox_container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    line-height: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.form_container .entry-item label {
+    display: inline-block;
 }
 
-.checkbox_container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 16px;
-    width: 16px;
-    background-color: #fff;
-    border: 1px solid #FF3344;
-    border-radius: 2px;
-}
-
-.checkbox_container:hover input ~ .checkmark {
-    background-color: #F3F2F6;
-}
-
-.checkbox_container input:checked ~ .checkmark {
-    background-color: #F3F2F6;
-}
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.checkbox_container input:checked ~ .checkmark:after {
-    display: block;
-}
-
-.checkbox_container .checkmark:after {
-    left: 5px;
-    top: 1px;
-    width: 5px;
-    height: 10px;
-    border: solid #FF3344;
-    border-width: 0 1px 1px 0;
-    -webkit-transform: rotate(38deg);
-    -ms-transform: rotate(38deg);
-    transform: rotate(38deg);
+.divider h2 {
+    text-align: center;
+    margin: 30px 0;
 }
