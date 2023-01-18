@@ -1,0 +1,221 @@
+html {
+    font-family: "Codec Pro";
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    background: #ff3344 url(./../images/bg.png) no-repeat;
+    min-width: 800px;
+    height: 550px;
+    font-size: 14px;
+}
+
+.left_side, .right_side {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.left_side {
+    left: 0;
+}
+
+.right_side {
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    right: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.logo > img {
+    width: 150px;
+}
+
+.section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section > h3, .section > p {
+    text-align: left;
+    font-weight: 400;
+}
+
+.left_side .section > h3, .left_side .section > p {
+    color: #fff;
+}
+
+.left_side .section > h3 {
+    font-size: 42px;
+}
+
+.section > p {
+    font-weight: 400;
+    line-height: 38px;
+}
+
+.left_side .section > p {
+    font-size: 30px;
+}
+
+.right_side .section > h3 {
+    font-size: 32px;
+    color: #000000;
+}
+
+.right_side .section p.description {
+    font-size: 18px;
+}
+
+.right_side .section > p {
+    font-size: 14px;
+}
+
+.section > h3 span:last-child {
+    color: #e5a912;
+    font-weight: 300;
+}
+
+.form_container {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    color: #4C4C66;
+}
+
+.form_container > .section > h3 {
+    font-weight: 600;
+}
+
+.form_container .api .text_field {
+    margin: 20px 0;
+}
+
+.form_container .api .text_field input  {
+    width: 308px;
+    background: #F3F2F6;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Codec Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 20px 15px;
+    border: 1px solid #F3F2F6;
+    margin: 10px 0;
+}
+
+.form_container .api .text_field input:focus {
+    border-color: #7B61FF;
+}
+
+.form_container .api button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 32px 10px;
+    font-family: 'Codec Pro';
+    font-style: normal;
+    width: 340px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14px;
+    border-radius: 42px;
+    margin: 20px 0;
+
+    color: #FF3344;
+}
+
+.form_container .api button.primary {
+    border: none;
+    background: #FFD96B;
+}
+
+.form_container .api button.secondary {
+    border: 1px solid #FF3344;
+    background: #fff;
+}
+
+.form_container a {
+    color: #659BF5;
+    text-decoration: none;
+}
+
+
+/*checkbox*/
+.checkbox_container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    line-height: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border: 1px solid #FF3344;
+    border-radius: 2px;
+}
+
+.checkbox_container:hover input ~ .checkmark {
+    background-color: #F3F2F6;
+}
+
+.checkbox_container input:checked ~ .checkmark {
+    background-color: #F3F2F6;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox_container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox_container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid #FF3344;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(38deg);
+    -ms-transform: rotate(38deg);
+    transform: rotate(38deg);
+}
