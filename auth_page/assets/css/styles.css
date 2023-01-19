@@ -112,6 +112,9 @@ body {
     height: 100%;
     max-width: 340px;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .entry-item .password-label, .section .create p {
