@@ -9,6 +9,11 @@ body {
     font-size: 14px;
     color: #4C4C66;
     overflow: hidden;
+
+    background-image: url(https://thisisenzo.github.io/auth_page/auth_page/assets/images/bg2.png), url(https://thisisenzo.github.io/auth_page/auth_page/assets/images/bg1.png);
+    background-attachment: fixed;
+    background-position: 0 100%, 40% 0;
+    background-repeat: no-repeat;
 }
 
 .wrapper {
