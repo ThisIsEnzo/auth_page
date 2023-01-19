@@ -214,3 +214,17 @@ body {
     text-align: center;
     margin: 30px 0;
 }
+
+.localAccount .divider {
+    display: none;
+}
+
+.entry ul {
+    text-decoration: none;
+}
+
+.divider h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+
