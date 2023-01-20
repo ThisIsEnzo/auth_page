@@ -130,7 +130,7 @@ body {
     margin: 20px 0;
 }
 
-.api input[type="text"], .api input[type="password"], .api input[type="email"] {
+.api input[type="text"], .api input[type="password"], .api input[type="email"], .api input[type="number"] {
     display: block;
     width: 308px;
     background: #F3F2F6;
@@ -146,8 +146,15 @@ body {
     margin: 10px 0;
 }
 
+.api input[type="text"][aria-disabled="true"], .api input[type="password"][aria-disabled="true"], .api input[type="email"][aria-disabled="true"], .api input[type="number"][aria-disabled="true"],
+.api input[type="text"][disabled], .api input[type="password"][disabled], .api input[type="email"][disabled], .api input[type="number"][disabled] {
+    color: rgb(150, 150, 163);
+    background-color: rgb(247, 246, 249);
+    border: 1px solid rgb(247, 246, 249);
+}
+
 .api {
-    margin: auto;
+    margin: auto !important;
     padding-bottom: 10px;
 }
 
@@ -195,7 +202,7 @@ body {
     background: #fff;
 }
 
-.api button[aria-disabled="true"]{
+.api button[aria-disabled="true"], .api button[disabled] {
     color: rgb(150, 150, 163);
     background-color: rgb(243, 242, 246) !important;
     cursor: default;
@@ -210,11 +217,6 @@ body {
     display: inline-block;
 }
 
-.divider h2 {
-    text-align: center;
-    margin: 30px 0;
-}
-
 .localAccount .divider {
     display: none;
 }
@@ -227,4 +229,5 @@ body {
     text-align: center;
     margin: 30px 0;
 }
+
 
