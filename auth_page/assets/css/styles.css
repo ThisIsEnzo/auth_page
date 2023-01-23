@@ -207,10 +207,6 @@ body {
     margin: 20px 0;
 }
 
-.form_container .api .entry input:focus {
-    border-color: #7B61FF;
-}
-
 .form_container .api button {
     display: flex;
     flex-direction: row;
