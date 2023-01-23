@@ -230,4 +230,11 @@ body {
     margin: 30px 0;
 }
 
+a.helpLink {
+    display: none;
+}
+div.error {
+    color: #ff3344;
+}
+
 
